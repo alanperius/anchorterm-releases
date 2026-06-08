@@ -9,7 +9,9 @@ palette and — the headline feature — **persistence**: close the app or reboo
 and your tabs, layout, each panel's working directory, and your **Claude Code
 sessions** come back exactly where you left them.
 
-![AnchorTerm](docs/screenshot.png)
+![AnchorTerm — multi-panel layout](docs/screenshot-multi.png)
+
+![AnchorTerm — single panel](docs/screenshot.png)
 
 [![Latest release](https://img.shields.io/github/v/release/alanperius/anchorterm-releases?sort=semver&label=download)](https://github.com/alanperius/anchorterm-releases/releases/latest)
 
