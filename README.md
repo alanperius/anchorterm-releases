@@ -88,11 +88,17 @@ chmod +x AnchorTerm.AppImage
    ```
 
 2. Open `AnchorTerm.dmg` and drag **AnchorTerm** onto the **Applications** folder.
-3. First launch (the app is unsigned): in Applications, **right-click AnchorTerm →
-   Open → Open**. If macOS still refuses, run once:
+3. First launch (the app is ad-hoc signed, not from a paid developer account):
+   in Applications, **right-click AnchorTerm → Open → Open**.
+
+   If macOS says **"AnchorTerm.app is damaged and can't be opened"** (Gatekeeper
+   on an internet-downloaded app), clear the quarantine flag once in Terminal:
 
    ```bash
-   xattr -dr com.apple.quarantine /Applications/AnchorTerm.app
+   xattr -cr /Applications/AnchorTerm.app
+   # if it still won't open, re-apply an ad-hoc signature locally:
+   codesign --force --deep --sign - /Applications/AnchorTerm.app
+   open /Applications/AnchorTerm.app
    ```
 
 ### 🪟 Windows (`.exe`)
