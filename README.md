@@ -50,6 +50,22 @@ chmod +x AnchorTerm-1.0.0.AppImage && ./AnchorTerm-1.0.0.AppImage
 > file**, not a package name. And run it from the folder where the file is
 > (usually `~/Downloads`), or the shell can't find it.
 
+**Most reliable: download from the terminal** (avoids broken browser downloads):
+
+```bash
+curl -fL -o anchorterm.deb \
+  https://github.com/alanperius/anchorterm-releases/releases/download/v1.0.0/anchorterm_1.0.0_amd64.deb
+sudo apt install ./anchorterm.deb
+```
+
+> **`E: Unsupported file … given on commandline`?** Your download is incomplete
+> or corrupted (it isn't a real `.deb`) — re-download with the `curl` command
+> above. A complete file is ~99 MB; check with `file anchorterm.deb`
+> (should say *"Debian binary package"*).
+
+You can also just **double-click the `.deb`** in your file manager to install it
+via the graphical software centre.
+
 **macOS / Windows are unsigned** (no paid certificate). First launch:
 - **macOS** — right-click the app → **Open** (or run
   `xattr -dr com.apple.quarantine /Applications/AnchorTerm.app`).
