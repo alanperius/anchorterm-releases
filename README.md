@@ -30,16 +30,16 @@ Get the latest installer from the **[Releases page](https://github.com/alanperiu
 | **Linux** — any distro | `AnchorTerm-*.AppImage` | portable, no install |
 | **macOS** — Apple Silicon | `AnchorTerm-*-arm64.dmg` | M1/M2/M3… |
 | **macOS** — Intel | `AnchorTerm-*.dmg` | |
-| **Windows** | `AnchorTerm.Setup.1.0.0.exe` | installer · also a portable `.exe` |
+| **Windows** | `AnchorTerm-Setup.exe` | installer · also a portable `.exe` |
 
-### ⬇️ Direct downloads — v1.0.0
+### ⬇️ Direct downloads (latest)
 
-- 🐧 **Linux · Debian/Ubuntu/Pop!_OS** — [`anchorterm_1.0.0_amd64.deb`](https://github.com/alanperius/anchorterm-releases/releases/download/v1.0.0/anchorterm_1.0.0_amd64.deb)
-- 🐧 **Linux · portable (any distro)** — [`AnchorTerm-1.0.0.AppImage`](https://github.com/alanperius/anchorterm-releases/releases/download/v1.0.0/AnchorTerm-1.0.0.AppImage)
-- 🍎 **macOS · Apple Silicon** — [`AnchorTerm-1.0.0-arm64.dmg`](https://github.com/alanperius/anchorterm-releases/releases/download/v1.0.0/AnchorTerm-1.0.0-arm64.dmg)
+- 🐧 **Linux · Debian/Ubuntu/Pop!_OS** — [`anchorterm_amd64.deb`](https://github.com/alanperius/anchorterm-releases/releases/latest/download/anchorterm_amd64.deb)
+- 🐧 **Linux · portable (any distro)** — [`AnchorTerm.AppImage`](https://github.com/alanperius/anchorterm-releases/releases/latest/download/AnchorTerm.AppImage)
+- 🍎 **macOS · Apple Silicon** — [`AnchorTerm-arm64.dmg`](https://github.com/alanperius/anchorterm-releases/releases/latest/download/AnchorTerm-arm64.dmg)
 - 🍎 **macOS · Intel** — _publishing shortly_
-- 🪟 **Windows · installer (recommended)** — [`AnchorTerm.Setup.1.0.0.exe`](https://github.com/alanperius/anchorterm-releases/releases/download/v1.0.0/AnchorTerm.Setup.1.0.0.exe)
-- 🪟 **Windows · portable (no install)** — [`AnchorTerm.1.0.0.exe`](https://github.com/alanperius/anchorterm-releases/releases/download/v1.0.0/AnchorTerm.1.0.0.exe)
+- 🪟 **Windows · installer (recommended)** — [`AnchorTerm-Setup.exe`](https://github.com/alanperius/anchorterm-releases/releases/latest/download/AnchorTerm-Setup.exe)
+- 🪟 **Windows · portable (no install)** — [`AnchorTerm-Portable.exe`](https://github.com/alanperius/anchorterm-releases/releases/latest/download/AnchorTerm-Portable.exe)
 
 ## Install
 
@@ -49,13 +49,13 @@ The reliable one-liner (downloads + installs; avoids broken browser downloads):
 
 ```bash
 curl -fL -o anchorterm.deb \
-  https://github.com/alanperius/anchorterm-releases/releases/download/v1.0.0/anchorterm_1.0.0_amd64.deb
+  https://github.com/alanperius/anchorterm-releases/releases/latest/download/anchorterm_amd64.deb
 sudo apt install ./anchorterm.deb
 ```
 
 Prefer the browser? Download the `.deb` from the Releases page, then either
 **double-click it** (installs via your software centre) or
-`sudo apt install ~/Downloads/anchorterm_1.0.0_amd64.deb`.
+`sudo apt install ~/Downloads/anchorterm_amd64.deb`.
 
 > **`E: Unsupported file … given on commandline`** means the file you downloaded
 > is incomplete/corrupted (not a real `.deb`) — use the `curl` command above. A
@@ -67,7 +67,7 @@ Then launch from your apps menu (**AnchorTerm**) or run `anchorterm`.
 
 ```bash
 curl -fL -o AnchorTerm.AppImage \
-  https://github.com/alanperius/anchorterm-releases/releases/download/v1.0.0/AnchorTerm-1.0.0.AppImage
+  https://github.com/alanperius/anchorterm-releases/releases/latest/download/AnchorTerm.AppImage
 chmod +x AnchorTerm.AppImage
 ./AnchorTerm.AppImage
 ```
@@ -80,11 +80,11 @@ chmod +x AnchorTerm.AppImage
    ```bash
    # Apple Silicon (M1/M2/M3/M4)
    curl -fL -o AnchorTerm.dmg \
-     https://github.com/alanperius/anchorterm-releases/releases/download/v1.0.0/AnchorTerm-1.0.0-arm64.dmg
+     https://github.com/alanperius/anchorterm-releases/releases/latest/download/AnchorTerm-arm64.dmg
 
    # Intel
    curl -fL -o AnchorTerm.dmg \
-     https://github.com/alanperius/anchorterm-releases/releases/download/v1.0.0/AnchorTerm-1.0.0.dmg
+     https://github.com/alanperius/anchorterm-releases/releases/latest/download/AnchorTerm-x64.dmg
    ```
 
 2. Open `AnchorTerm.dmg` and drag **AnchorTerm** onto the **Applications** folder.
@@ -98,10 +98,10 @@ chmod +x AnchorTerm.AppImage
 ### 🪟 Windows (`.exe`)
 
 Download the **installer** —
-[`AnchorTerm.Setup.1.0.0.exe`](https://github.com/alanperius/anchorterm-releases/releases/download/v1.0.0/AnchorTerm.Setup.1.0.0.exe)
+[`AnchorTerm-Setup.exe`](https://github.com/alanperius/anchorterm-releases/releases/latest/download/AnchorTerm-Setup.exe)
 — and run it. On the blue SmartScreen prompt (unsigned app) click
 **More info → Run anyway**, then follow the wizard. There's also a **portable**
-[`AnchorTerm.1.0.0.exe`](https://github.com/alanperius/anchorterm-releases/releases/download/v1.0.0/AnchorTerm.1.0.0.exe)
+[`AnchorTerm-Portable.exe`](https://github.com/alanperius/anchorterm-releases/releases/latest/download/AnchorTerm-Portable.exe)
 that runs without installing.
 
 ## Updates
@@ -166,6 +166,7 @@ macOS uses `⌘`; Linux/Windows use `Ctrl+Shift`.
 | Close panel | `⌘W` | `Ctrl+Shift+W` |
 | Maximize / restore panel | `⌘↵` | `Ctrl+Shift+↵` |
 | Search in terminal | `⌘F` | `Ctrl+Shift+F` |
+| Copy / paste in terminal | `⌘C` / `⌘V` | `Ctrl+Shift+C` / `Ctrl+Shift+V` |
 | Focus panel (directional) | `⌥ + arrows` | `Alt + arrows` |
 | Toggle sidebar / snippets | `⌘B` / `⌘J` | `Ctrl+Shift+B` / `Ctrl+Shift+J` |
 
