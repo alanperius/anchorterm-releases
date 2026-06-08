@@ -167,6 +167,7 @@ macOS uses `⌘`; Linux/Windows use `Ctrl+Shift`.
 | Maximize / restore panel | `⌘↵` | `Ctrl+Shift+↵` |
 | Search in terminal | `⌘F` | `Ctrl+Shift+F` |
 | Copy / paste in terminal | `⌘C` / `⌘V` | `Ctrl+Shift+C` / `Ctrl+Shift+V` |
+| Newline without sending (e.g. Claude) | `⇧Enter` | `Shift+Enter` |
 | Focus panel (directional) | `⌥ + arrows` | `Alt + arrows` |
 | Toggle sidebar / snippets | `⌘B` / `⌘J` | `Ctrl+Shift+B` / `Ctrl+Shift+J` |
 
