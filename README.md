@@ -32,25 +32,11 @@ Get the latest installer from the **[Releases page](https://github.com/alanperiu
 | **macOS** — Intel | `AnchorTerm-*.dmg` | |
 | **Windows** | `AnchorTerm-Setup-*.exe` | installer · also a portable `.exe` |
 
-### Install
+## Install
 
-```bash
-# Debian / Ubuntu / Pop!_OS — cd to where the .deb downloaded first:
-cd ~/Downloads
-sudo apt install ./anchorterm_1.0.0_amd64.deb
-# (or from anywhere, with the full path:)
-sudo apt install ~/Downloads/anchorterm_1.0.0_amd64.deb
+### 🐧 Linux — Debian / Ubuntu / Pop!_OS (`.deb`)
 
-# AppImage (portable, no install)
-cd ~/Downloads
-chmod +x AnchorTerm-1.0.0.AppImage && ./AnchorTerm-1.0.0.AppImage
-```
-
-> The `./` (or a full path) matters — it tells `apt` the argument is a **local
-> file**, not a package name. And run it from the folder where the file is
-> (usually `~/Downloads`), or the shell can't find it.
-
-**Most reliable: download from the terminal** (avoids broken browser downloads):
+The reliable one-liner (downloads + installs; avoids broken browser downloads):
 
 ```bash
 curl -fL -o anchorterm.deb \
@@ -58,18 +44,53 @@ curl -fL -o anchorterm.deb \
 sudo apt install ./anchorterm.deb
 ```
 
-> **`E: Unsupported file … given on commandline`?** Your download is incomplete
-> or corrupted (it isn't a real `.deb`) — re-download with the `curl` command
-> above. A complete file is ~99 MB; check with `file anchorterm.deb`
-> (should say *"Debian binary package"*).
+Prefer the browser? Download the `.deb` from the Releases page, then either
+**double-click it** (installs via your software centre) or
+`sudo apt install ~/Downloads/anchorterm_1.0.0_amd64.deb`.
 
-You can also just **double-click the `.deb`** in your file manager to install it
-via the graphical software centre.
+> **`E: Unsupported file … given on commandline`** means the file you downloaded
+> is incomplete/corrupted (not a real `.deb`) — use the `curl` command above. A
+> good file is ~99 MB; check with `file anchorterm.deb` → *"Debian binary package"*.
 
-**macOS / Windows are unsigned** (no paid certificate). First launch:
-- **macOS** — right-click the app → **Open** (or run
-  `xattr -dr com.apple.quarantine /Applications/AnchorTerm.app`).
-- **Windows** — on the SmartScreen prompt click **More info → Run anyway**.
+Then launch from your apps menu (**AnchorTerm**) or run `anchorterm`.
+
+### 🐧 Linux — any distro (AppImage, no install)
+
+```bash
+curl -fL -o AnchorTerm.AppImage \
+  https://github.com/alanperius/anchorterm-releases/releases/download/v1.0.0/AnchorTerm-1.0.0.AppImage
+chmod +x AnchorTerm.AppImage
+./AnchorTerm.AppImage
+```
+
+### 🍎 macOS (`.dmg`)
+
+1. Download the build for your chip ( menu → **About This Mac**: "Apple M…" =
+   Apple Silicon, otherwise Intel):
+
+   ```bash
+   # Apple Silicon (M1/M2/M3/M4)
+   curl -fL -o AnchorTerm.dmg \
+     https://github.com/alanperius/anchorterm-releases/releases/download/v1.0.0/AnchorTerm-1.0.0-arm64.dmg
+
+   # Intel
+   curl -fL -o AnchorTerm.dmg \
+     https://github.com/alanperius/anchorterm-releases/releases/download/v1.0.0/AnchorTerm-1.0.0.dmg
+   ```
+
+2. Open `AnchorTerm.dmg` and drag **AnchorTerm** onto the **Applications** folder.
+3. First launch (the app is unsigned): in Applications, **right-click AnchorTerm →
+   Open → Open**. If macOS still refuses, run once:
+
+   ```bash
+   xattr -dr com.apple.quarantine /Applications/AnchorTerm.app
+   ```
+
+### 🪟 Windows (`.exe`)
+
+Download **`AnchorTerm Setup 1.0.0.exe`** and run it. On the blue SmartScreen
+prompt (unsigned app) click **More info → Run anyway**. A portable
+`AnchorTerm 1.0.0.exe` (no install) is also provided.
 
 ## What it is
 
