@@ -172,6 +172,12 @@ macOS uses `⌘`; Linux/Windows use `Ctrl+Shift`.
 
 Double-click a workspace or panel name to rename it.
 
+> **Pasting images** (e.g. screenshots for Claude Code): copy an image to your
+> clipboard, then paste with `Ctrl+Shift+V` / `⌘V`. AnchorTerm saves it to a temp
+> file and types the **file path** into the terminal, which Claude Code reads as
+> an attached image. (xterm-based terminals can't embed images directly, so this
+> is the reliable, cross-platform way.)
+
 ## How the Claude resume works
 
 Claude Code records each conversation on disk. AnchorTerm detects a running
