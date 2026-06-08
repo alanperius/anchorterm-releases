@@ -35,12 +35,20 @@ Get the latest installer from the **[Releases page](https://github.com/alanperiu
 ### Install
 
 ```bash
-# Debian / Ubuntu / Pop!_OS
-sudo apt install ./anchorterm_*_amd64.deb
+# Debian / Ubuntu / Pop!_OS — cd to where the .deb downloaded first:
+cd ~/Downloads
+sudo apt install ./anchorterm_1.0.0_amd64.deb
+# (or from anywhere, with the full path:)
+sudo apt install ~/Downloads/anchorterm_1.0.0_amd64.deb
 
-# AppImage (portable)
-chmod +x AnchorTerm-*.AppImage && ./AnchorTerm-*.AppImage
+# AppImage (portable, no install)
+cd ~/Downloads
+chmod +x AnchorTerm-1.0.0.AppImage && ./AnchorTerm-1.0.0.AppImage
 ```
+
+> The `./` (or a full path) matters — it tells `apt` the argument is a **local
+> file**, not a package name. And run it from the folder where the file is
+> (usually `~/Downloads`), or the shell can't find it.
 
 **macOS / Windows are unsigned** (no paid certificate). First launch:
 - **macOS** — right-click the app → **Open** (or run
