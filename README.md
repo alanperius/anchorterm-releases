@@ -30,7 +30,16 @@ Get the latest installer from the **[Releases page](https://github.com/alanperiu
 | **Linux** — any distro | `AnchorTerm-*.AppImage` | portable, no install |
 | **macOS** — Apple Silicon | `AnchorTerm-*-arm64.dmg` | M1/M2/M3… |
 | **macOS** — Intel | `AnchorTerm-*.dmg` | |
-| **Windows** | `AnchorTerm-Setup-*.exe` | installer · also a portable `.exe` |
+| **Windows** | `AnchorTerm.Setup.1.0.0.exe` | installer · also a portable `.exe` |
+
+### ⬇️ Direct downloads — v1.0.0
+
+- 🐧 **Linux · Debian/Ubuntu/Pop!_OS** — [`anchorterm_1.0.0_amd64.deb`](https://github.com/alanperius/anchorterm-releases/releases/download/v1.0.0/anchorterm_1.0.0_amd64.deb)
+- 🐧 **Linux · portable (any distro)** — [`AnchorTerm-1.0.0.AppImage`](https://github.com/alanperius/anchorterm-releases/releases/download/v1.0.0/AnchorTerm-1.0.0.AppImage)
+- 🍎 **macOS · Apple Silicon** — [`AnchorTerm-1.0.0-arm64.dmg`](https://github.com/alanperius/anchorterm-releases/releases/download/v1.0.0/AnchorTerm-1.0.0-arm64.dmg)
+- 🍎 **macOS · Intel** — _publishing shortly_
+- 🪟 **Windows · installer (recommended)** — [`AnchorTerm.Setup.1.0.0.exe`](https://github.com/alanperius/anchorterm-releases/releases/download/v1.0.0/AnchorTerm.Setup.1.0.0.exe)
+- 🪟 **Windows · portable (no install)** — [`AnchorTerm.1.0.0.exe`](https://github.com/alanperius/anchorterm-releases/releases/download/v1.0.0/AnchorTerm.1.0.0.exe)
 
 ## Install
 
@@ -88,9 +97,12 @@ chmod +x AnchorTerm.AppImage
 
 ### 🪟 Windows (`.exe`)
 
-Download **`AnchorTerm Setup 1.0.0.exe`** and run it. On the blue SmartScreen
-prompt (unsigned app) click **More info → Run anyway**. A portable
-`AnchorTerm 1.0.0.exe` (no install) is also provided.
+Download the **installer** —
+[`AnchorTerm.Setup.1.0.0.exe`](https://github.com/alanperius/anchorterm-releases/releases/download/v1.0.0/AnchorTerm.Setup.1.0.0.exe)
+— and run it. On the blue SmartScreen prompt (unsigned app) click
+**More info → Run anyway**, then follow the wizard. There's also a **portable**
+[`AnchorTerm.1.0.0.exe`](https://github.com/alanperius/anchorterm-releases/releases/download/v1.0.0/AnchorTerm.1.0.0.exe)
+that runs without installing.
 
 ## What it is
 
