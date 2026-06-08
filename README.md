@@ -104,6 +104,16 @@ Download the **installer** —
 [`AnchorTerm.1.0.0.exe`](https://github.com/alanperius/anchorterm-releases/releases/download/v1.0.0/AnchorTerm.1.0.0.exe)
 that runs without installing.
 
+## Updates
+
+AnchorTerm checks for new versions automatically:
+
+- **Windows & Linux AppImage** — updates download in the background; you'll see
+  **“Update ready — Restart & update”** and it installs on restart.
+- **Linux `.deb` & macOS** — you'll be notified that a new version exists with a
+  **Download** button (auto-install isn't available there: `.deb` is managed by
+  `apt`, and macOS needs a signed app). Grab the new file from Releases.
+
 ## What it is
 
 AnchorTerm is a desktop "command center" for people who work with several
